@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AD40BA0E28C1128100B191B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA0D28C1128100B191B0 /* AppDelegate.swift */; };
 		AD40BA1028C1128100B191B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA0F28C1128100B191B0 /* SceneDelegate.swift */; };
-		AD40BA1228C1128100B191B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA1128C1128100B191B0 /* ViewController.swift */; };
-		AD40BA1528C1128100B191B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD40BA1328C1128100B191B0 /* Main.storyboard */; };
 		AD40BA1728C1128200B191B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD40BA1628C1128200B191B0 /* Assets.xcassets */; };
 		AD40BA1A28C1128200B191B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD40BA1828C1128200B191B0 /* LaunchScreen.storyboard */; };
+		AD40BA2228C1136200B191B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA2128C1136200B191B0 /* ViewController.swift */; };
+		AD40BA2428C11B9900B191B0 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA2328C11B9900B191B0 /* PopOverViewController.swift */; };
+		AD40BA2828C11DA500B191B0 /* PopOverCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA2728C11DA500B191B0 /* PopOverCollectionView.swift */; };
+		AD40BA2A28C121D400B191B0 /* PopOverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD40BA2928C121D400B191B0 /* PopOverCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD40BA0A28C1128100B191B0 /* PopoverApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoverApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD40BA0D28C1128100B191B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD40BA0F28C1128100B191B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD40BA1128C1128100B191B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD40BA1428C1128100B191B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD40BA1628C1128200B191B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD40BA1928C1128200B191B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD40BA1B28C1128200B191B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD40BA2128C1136200B191B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD40BA2328C11B9900B191B0 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		AD40BA2728C11DA500B191B0 /* PopOverCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverCollectionView.swift; sourceTree = "<group>"; };
+		AD40BA2928C121D400B191B0 /* PopOverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		AD40BA0C28C1128100B191B0 /* PopoverApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD40BA0D28C1128100B191B0 /* AppDelegate.swift */,
-				AD40BA0F28C1128100B191B0 /* SceneDelegate.swift */,
-				AD40BA1128C1128100B191B0 /* ViewController.swift */,
-				AD40BA1328C1128100B191B0 /* Main.storyboard */,
+				AD40BA2B28C1274100B191B0 /* Application */,
+				AD40BA2628C11D4D00B191B0 /* Views */,
+				AD40BA2528C11D4600B191B0 /* Controllers */,
 				AD40BA1628C1128200B191B0 /* Assets.xcassets */,
 				AD40BA1828C1128200B191B0 /* LaunchScreen.storyboard */,
 				AD40BA1B28C1128200B191B0 /* Info.plist */,
 			);
 			path = PopoverApp;
+			sourceTree = "<group>";
+		};
+		AD40BA2528C11D4600B191B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD40BA2128C1136200B191B0 /* ViewController.swift */,
+				AD40BA2328C11B9900B191B0 /* PopOverViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD40BA2628C11D4D00B191B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD40BA2728C11DA500B191B0 /* PopOverCollectionView.swift */,
+				AD40BA2928C121D400B191B0 /* PopOverCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD40BA2B28C1274100B191B0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AD40BA0D28C1128100B191B0 /* AppDelegate.swift */,
+				AD40BA0F28C1128100B191B0 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +157,6 @@
 			files = (
 				AD40BA1A28C1128200B191B0 /* LaunchScreen.storyboard in Resources */,
 				AD40BA1728C1128200B191B0 /* Assets.xcassets in Resources */,
-				AD40BA1528C1128100B191B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD40BA1228C1128100B191B0 /* ViewController.swift in Sources */,
+				AD40BA2428C11B9900B191B0 /* PopOverViewController.swift in Sources */,
+				AD40BA2228C1136200B191B0 /* ViewController.swift in Sources */,
+				AD40BA2A28C121D400B191B0 /* PopOverCollectionViewCell.swift in Sources */,
 				AD40BA0E28C1128100B191B0 /* AppDelegate.swift in Sources */,
+				AD40BA2828C11DA500B191B0 /* PopOverCollectionView.swift in Sources */,
 				AD40BA1028C1128100B191B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AD40BA1328C1128100B191B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD40BA1428C1128100B191B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD40BA1828C1128200B191B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +316,7 @@
 				INFOPLIST_FILE = PopoverApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +344,7 @@
 				INFOPLIST_FILE = PopoverApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
